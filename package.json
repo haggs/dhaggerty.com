@@ -1,53 +1,18 @@
 {
-  "name": "personal-website",
-  "version": "1.0.0",
-  "private": true,
-  "description": "personal-website",
+  "name": "dhaggerty.com",
+  "version": "2.0.0",
+  "description": "Dan Haggerty's personal website",
   "author": "Dan Haggerty",
-  "keywords": [
-    "gatsby"
-  ],
   "scripts": {
-    "develop": "gatsby develop",
-    "start": "gatsby develop",
-    "build": "gatsby build",
-    "serve": "gatsby serve",
-    "clean": "gatsby clean",
-    "prettier": "prettier --write .",
-    "prettier:check": "prettier --check .",
-    "typecheck": "tsc --noEmit"
-  },
-  "dependencies": {
-    "@browniebroke/gatsby-image-gallery": "^7.2.1",
-    "@fontsource/red-hat-display": "^4.5.12",
-    "@fontsource/red-hat-mono": "^4.5.12",
-    "@fontsource/source-code-pro": "^4.5.14",
-    "@fontsource/work-sans": "^4.5.14",
-    "@mdx-js/react": "^2.2.1",
-    "@react-icons/all-files": "^4.1.0",
-    "classnames": "^2.3.2",
-    "gatsby": "^5.12.0",
-    "gatsby-adapter-netlify": "^1.0.1",
-    "gatsby-plugin-anchor-links": "^1.2.1",
-    "gatsby-plugin-exclude": "^1.0.2",
-    "gatsby-plugin-image": "^3.4.0",
-    "gatsby-plugin-manifest": "^5.12.0",
-    "gatsby-plugin-mdx": "^5.4.0",
-    "gatsby-plugin-netlify": "^5.1.0",
-    "gatsby-plugin-sharp": "^5.4.0",
-    "gatsby-source-filesystem": "^5.4.0",
-    "gatsby-transformer-sharp": "^5.4.0",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "dev": "http-server -p 8000 -o /src/",
+    "format": "prettier --write .",
+    "lint": "eslint --fix .",
+    "format:check": "prettier --check .",
+    "lint:check": "eslint ."
   },
   "devDependencies": {
-    "@types/classnames": "^2.3.1",
-    "@types/node": "^18.11.18",
-    "@types/react": "^18.0.27",
-    "@types/react-dom": "^18.0.10",
-    "eslint-config-react-app": "^7.0.1",
-    "eslint-plugin-unused-imports": "^2.0.0",
-    "prettier": "^2.8.3",
-    "typescript": "^4.9.4"
+    "eslint": "^8.57.1",
+    "http-server": "^14.1.1",
+    "prettier": "^2.8.3"
   }
 }

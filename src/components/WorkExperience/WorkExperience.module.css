@@ -1,7 +1,0 @@
-.jobList {
-  max-width: 800px;
-}
-
-.jobList > li:not(:last-child) {
-  margin-bottom: 6rem;
-}

@@ -1,5 +1,3 @@
-.cache
 .eslintrc.cjs
 prettier.config.js
-public
-src/gatsby-types.d.ts
+static/
