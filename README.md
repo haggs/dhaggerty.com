@@ -20,26 +20,24 @@ To run the site locally, you need a simple HTTP server (required for ES6 modules
 python3 -m http.server 8000
 ```
 
-Then visit `http://localhost:8000/src/` in your browser.
+Then visit `http://localhost:8000/` in your browser.
 
 ### Node.js (with npx)
 ```bash
 npx http-server -p 8000
 ```
 
-Then visit `http://localhost:8000/src/` in your browser.
+Then visit `http://localhost:8000/` in your browser.
 
 ### VS Code Live Server
-Install the Live Server extension, right-click on `src/index.html`, and select "Open with Live Server".
+Install the Live Server extension, right-click on `index.html`, and select "Open with Live Server".
 
 ## File Structure
 
-- `src/index.html` - Main HTML file with all content
-- `src/styles.css` - All styles consolidated from previous CSS modules
-- `src/main.js` - ES6 module with interactive features (dark mode, navigation, smooth scroll)
-- `src/images/` - Profile images
-- `jobs/*/` - Company logos and assets
-- `static/resume.pdf` - Resume PDF
+- `index.html` - Main HTML file with all content
+- `styles.css` - All styles consolidated from previous CSS modules
+- `main.js` - ES6 module with interactive features (dark mode, navigation, smooth scroll)
+- `static/` - All static assets (images, logos, resume, favicon)
 
 ## Technologies
 
@@ -58,9 +56,7 @@ To deploy to GitHub Pages:
 4. Select "/ (root)" as the folder
 5. Click Save
 
-Your site will be available at `https://[username].github.io/[repository-name]/src/`
-
-Alternatively, you can create an `index.html` in the root that redirects to `src/index.html`, or move the files from `src/` to the root directory.
+Your site will be available at `https://[username].github.io/[repository-name]/`
 
 If you want it at `https://[username].github.io/`, name your repository `[username].github.io`.
 

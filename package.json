@@ -4,7 +4,7 @@
   "description": "Dan Haggerty's personal website",
   "author": "Dan Haggerty",
   "scripts": {
-    "dev": "http-server -p 8000 -o /src/",
+    "dev": "http-server -p 8000 -o",
     "format": "prettier --write .",
     "lint": "eslint --fix .",
     "format:check": "prettier --check .",

@@ -395,7 +395,6 @@ li:not(:last-child) {
 }
 
 .job-image-container {
-  height: 64px;
   width: 64px;
   flex-shrink: 0;
   display: flex;
@@ -408,6 +407,7 @@ li:not(:last-child) {
   max-width: 64px;
   width: auto;
   height: auto;
+  object-fit: contain;
 }
 
 .job-text-container {
@@ -549,11 +549,15 @@ li:not(:last-child) {
   }
 
   .job-image-container {
-    height: 48px;
+    width: 48px;
   }
 
   .job-image-container img {
-    height: 48px;
+    max-height: 48px;
+    max-width: 48px;
+    width: auto;
+    height: auto;
+    object-fit: contain;
   }
 
   .job-text-container h2 {
