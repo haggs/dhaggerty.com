@@ -16,6 +16,7 @@ A simple, clean personal website built with plain HTML, CSS, and JavaScript ES6 
 To run the site locally, you need a simple HTTP server (required for ES6 modules to work properly):
 
 ### Python 3
+
 ```bash
 python3 -m http.server 8000
 ```
@@ -23,6 +24,7 @@ python3 -m http.server 8000
 Then visit `http://localhost:8000/` in your browser.
 
 ### Node.js (with npx)
+
 ```bash
 npx http-server -p 8000
 ```
@@ -30,6 +32,7 @@ npx http-server -p 8000
 Then visit `http://localhost:8000/` in your browser.
 
 ### VS Code Live Server
+
 Install the Live Server extension, right-click on `index.html`, and select "Open with Live Server".
 
 ## File Structure
@@ -72,6 +75,7 @@ All modern browsers support ES6 modules natively.
 ## Development
 
 The codebase uses:
+
 - ESLint for JavaScript linting (configured for ES2021 + modules)
 - Modern JavaScript (const, let, arrow functions, template literals)
 - No build process required - runs directly in the browser

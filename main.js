@@ -2,12 +2,12 @@
 function initDarkMode() {
   const DARK_MODE_KEY = 'darkMode';
   const darkModeToggle = document.getElementById('dark-mode-toggle');
-  
+
   if (!darkModeToggle) {
     console.error('Dark mode toggle button not found');
     return;
   }
-  
+
   const sunIcon = darkModeToggle.querySelector('.sun-icon');
   const moonIcon = darkModeToggle.querySelector('.moon-icon');
 
@@ -205,4 +205,10 @@ if (document.readyState === 'loading') {
   init();
 }
 
-export { initDarkMode, initMobileNav, initScrollToTop, initSmoothScroll, initFooterYear };
+export {
+  initDarkMode,
+  initMobileNav,
+  initScrollToTop,
+  initSmoothScroll,
+  initFooterYear,
+};
