@@ -37,7 +37,7 @@ Install the Live Server extension, right-click on `index.html`, and select "Open
 - `index.html` - Main HTML file with all content
 - `styles.css` - All styles consolidated from previous CSS modules
 - `main.js` - ES6 module with interactive features (dark mode, navigation, smooth scroll)
-- `static/` - All static assets (images, logos, resume, favicon)
+- `images/` - All static assets (images, logos, resume, favicon)
 
 ## Technologies
 
