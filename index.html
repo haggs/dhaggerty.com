@@ -7,7 +7,35 @@
       name="description"
       content="Dan Haggerty - Full stack developer based in Detroit, Michigan"
     />
+    <meta name="author" content="Dan Haggerty" />
+    <meta
+      name="keywords"
+      content="Dan Haggerty, software developer, full stack developer, NVIDIA, Detroit, Michigan"
+    />
     <title>Dan Haggerty</title>
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://dhaggerty.com/" />
+
+    <!-- Open Graph / Facebook / LinkedIn -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://dhaggerty.com/" />
+    <meta property="og:title" content="Dan Haggerty - Software Developer" />
+    <meta
+      property="og:description"
+      content="Full stack developer at NVIDIA based in Detroit, Michigan. Previously at Twitter and Google."
+    />
+    <meta property="og:image" content="https://dhaggerty.com/images/profile-pic.jpg" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:url" content="https://dhaggerty.com/" />
+    <meta name="twitter:title" content="Dan Haggerty - Software Developer" />
+    <meta
+      name="twitter:description"
+      content="Full stack developer at NVIDIA based in Detroit, Michigan. Previously at Twitter and Google."
+    />
+    <meta name="twitter:image" content="https://dhaggerty.com/images/profile-pic.jpg" />
 
     <link rel="icon" type="image/png" href="images/favicon.png" />
 
@@ -19,6 +47,34 @@
     />
 
     <link rel="stylesheet" href="styles.css" />
+
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Dan Haggerty",
+        "url": "https://dhaggerty.com",
+        "image": "https://dhaggerty.com/images/profile-pic.jpg",
+        "jobTitle": "Software Developer",
+        "worksFor": {
+          "@type": "Organization",
+          "name": "NVIDIA"
+        },
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Detroit",
+          "addressRegion": "Michigan",
+          "addressCountry": "US"
+        },
+        "email": "dan@dhaggerty.com",
+        "sameAs": [
+          "https://github.com/haggs",
+          "https://www.linkedin.com/in/haggertydan/",
+          "https://www.instagram.com/danhaggerty/"
+        ]
+      }
+    </script>
   </head>
   <body>
     <div class="page">
