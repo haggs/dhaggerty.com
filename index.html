@@ -9,10 +9,8 @@
     />
     <title>Dan Haggerty</title>
 
-    <!-- Favicon -->
     <link rel="icon" type="image/png" href="images/favicon.png" />
 
-    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -20,763 +18,173 @@
       rel="stylesheet"
     />
 
-    <!-- Styles -->
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <div class="page">
-      <header class="header">
-        <div class="logo-and-skip-link">
-          <a class="skip-link" href="#main" title="Skip to main content"
-            >Skip to content</a
-          >
-          <a href="/" title="Go home" class="logo mono link-accent">DH._</a>
-        </div>
-        <nav class="full-nav">
-          <ul class="link-list mono">
-            <li><a href="#contact">Contact</a></li>
-            <li>
-              <a class="button" href="resume.pdf" target="_blank">Resume</a>
-            </li>
-          </ul>
-        </nav>
-        <button
-          class="nav-menu-button icon-button"
-          aria-label="Toggle navigation menu"
-          id="nav-menu-toggle"
-        >
-          <svg
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-          >
-            <line x1="3" y1="12" x2="21" y2="12"></line>
-            <line x1="3" y1="6" x2="21" y2="6"></line>
-            <line x1="3" y1="18" x2="21" y2="18"></line>
-          </svg>
-        </button>
-        <button
-          class="dark-mode-toggle icon-button hover-fill"
-          aria-label="Toggle dark mode"
-          id="dark-mode-toggle"
-        >
-          <svg
-            class="sun-icon"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-          >
-            <circle cx="12" cy="12" r="5"></circle>
-            <line x1="12" y1="1" x2="12" y2="3"></line>
-            <line x1="12" y1="21" x2="12" y2="23"></line>
-            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
-            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
-            <line x1="1" y1="12" x2="3" y2="12"></line>
-            <line x1="21" y1="12" x2="23" y2="12"></line>
-            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
-            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
-          </svg>
-          <svg
-            class="moon-icon"
-            style="display: none"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-          >
-            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
-          </svg>
-        </button>
-      </header>
-
-      <nav class="nav-menu" id="nav-menu" style="display: none">
-        <ul class="link-list mono stacked-list">
-          <li><a href="#home" class="nav-menu-link">Home</a></li>
-          <li><a href="#contact" class="nav-menu-link">Contact</a></li>
-          <li>
-            <a class="button nav-menu-link" href="resume.pdf" target="_blank"
-              >Resume</a
-            >
-          </li>
-        </ul>
-      </nav>
-
       <main id="main" class="main">
-        <section id="home" class="intro">
-          <div class="intro-text">
-            <h1 class="title">Dan Haggerty</h1>
-            <h2>Full stack developer based in Detroit, Michigan.</h2>
-            <p>
-              Hello, world. I'm Dan. Software developer, home improvement
-              enthusiast, and new father. I'm currently working at
-              <a href="https://www.nvidia.com/" target="_blank" rel="noreferrer"
-                >NVIDIA</a
-              >
-              on novel UIs for customizing LLMs and agents. Previously, I worked at
-              <a href="https://www.x.com/" target="_blank" rel="noreferrer"
-                >Twitter</a
-              >
-              on content moderation, at
-              <a href="https://www.google.com" target="_blank" rel="noreferrer"
-                >Google</a
-              >
-              on
-              <a
-                href="https://www.youtube.com/watch?v=FBWvXZP_frg"
-                target="_blank"
-                rel="noreferrer"
-                >Live Case</a
-              >, and at a consulting firm I co-owned in Guayaquil, Ecuador.
-            </p>
-            <p>
-              I'm <strong>not looking for work</strong> right now, but feel free
-              to <a href="#contact" class="link-accent">reach out</a> anyways.
-            </p>
+        <section class="content">
+          <div class="profile-photo">
+            <img src="images/profile-pic.jpg" alt="Dan Haggerty" />
           </div>
-          <div class="profile-photo-container">
-            <div class="profile-photo">
-              <img
-                src="images/profile-pic.jpg"
-                alt="Dan Haggerty smiling wearing sunglasses"
-              /> 
-            </div>
-          </div>
-        </section>
-
-        <section id="work-life" class="work-experience">
-          <h1>Work Experience</h1>
-          <ul class="job-list">
-            <!-- NVIDIA -->
-            <li>
-              <div class="job-container">
-                <div class="job-image-container">
-                  <img src="images/nvidia-logo.png" alt="NVIDIA logo" />
-                </div>
-                <div class="job-text-container">
-                  <h2>NVIDIA</h2>
-                  <h3>Full Stack Software Engineer, AI Research Engineering</h3>
-                  <p>
-                    <svg
-                      class="icon-accent"
-                      width="16"
-                      height="16"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    >
-                      <rect
-                        x="3"
-                        y="4"
-                        width="18"
-                        height="18"
-                        rx="2"
-                        ry="2"
-                      ></rect>
-                      <line x1="16" y1="2" x2="16" y2="6"></line>
-                      <line x1="8" y1="2" x2="8" y2="6"></line>
-                      <line x1="3" y1="10" x2="21" y2="10"></line>
-                    </svg>
-                    June 2023 - Today
-                  </p>
-                  <p>
-                    <svg
-                      class="icon-accent"
-                      width="16"
-                      height="16"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    >
-                      <path
-                        d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"
-                      ></path>
-                      <circle cx="12" cy="10" r="3"></circle>
-                    </svg>
-                    Detroit, Michigan (Remote)
-                  </p>
-                  <ul class="job-description">
-                    <li>
-                      Developed experimental LLM development tools using React,
-                      Typescript, and Python.
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </li>
-
-            <!-- Twitter -->
-            <li>
-              <div class="job-container">
-                <div class="job-image-container">
-                  <img src="images/larry.png" alt="Twitter logo" />
-                </div>
-                <div class="job-text-container">
-                  <h2>Twitter</h2>
-                  <h3>Senior Software Engineer, Trust & Safety</h3>
-                  <p>
-                    <svg
-                      class="icon-accent"
-                      width="16"
-                      height="16"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    >
-                      <rect
-                        x="3"
-                        y="4"
-                        width="18"
-                        height="18"
-                        rx="2"
-                        ry="2"
-                      ></rect>
-                      <line x1="16" y1="2" x2="16" y2="6"></line>
-                      <line x1="8" y1="2" x2="8" y2="6"></line>
-                      <line x1="3" y1="10" x2="21" y2="10"></line>
-                    </svg>
-                    April 2018 - January 2023
-                  </p>
-                  <p>
-                    <svg
-                      class="icon-accent"
-                      width="16"
-                      height="16"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    >
-                      <path
-                        d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"
-                      ></path>
-                      <circle cx="12" cy="10" r="3"></circle>
-                    </svg>
-                    San Francisco, California -> Detroit, Michigan (Remote)
-                  </p>
-                  <ul class="job-description">
-                    <li>
-                      Developed internal tools for improving the safety of
-                      Twitter users using React, Typescript, and Scala
-                    </li>
-                    <li>
-                      Turned requirements into web applications used by
-                      thousands of agents working in areas of abuse, spam, child
-                      safety, hate speech, copyright, law enforcement requests,
-                      and many more domains
-                    </li>
-                    <li>
-                      Designed tool features for improving the mental well-being
-                      of agents exposed to harmful content
-                    </li>
-                    <li>
-                      Owned a React UI component library used by multiple teams
-                      to speed up the development of features
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </li>
-
-            <!-- Google -->
-            <li>
-              <div class="job-container">
-                <div class="job-image-container">
-                  <img src="images/google-logo.png" alt="Google logo" />
-                </div>
-                <div class="job-text-container">
-                  <h2>Google</h2>
-                  <h3>Software Engineer, Pixel (Contract)</h3>
-                  <p>
-                    <svg
-                      class="icon-accent"
-                      width="16"
-                      height="16"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    >
-                      <rect
-                        x="3"
-                        y="4"
-                        width="18"
-                        height="18"
-                        rx="2"
-                        ry="2"
-                      ></rect>
-                      <line x1="16" y1="2" x2="16" y2="6"></line>
-                      <line x1="8" y1="2" x2="8" y2="6"></line>
-                      <line x1="3" y1="10" x2="21" y2="10"></line>
-                    </svg>
-                    May 2016 - April 2018
-                  </p>
-                  <p>
-                    <svg
-                      class="icon-accent"
-                      width="16"
-                      height="16"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    >
-                      <path
-                        d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"
-                      ></path>
-                      <circle cx="12" cy="10" r="3"></circle>
-                    </svg>
-                    Mountain View, California
-                  </p>
-                  <ul class="job-description">
-                    <li>
-                      Developed code for the Live Case customization platform
-                      using Google Cloud Platform and App Engine
-                    </li>
-                    <li>
-                      Implemented a new UI using AngularJS and ES6, increasing
-                      purchase conversion rate by 30%
-                    </li>
-                    <li>
-                      Designed an image moderation service built on computer
-                      vision and machine learning APIs
-                    </li>
-                    <li>
-                      Added integrations with multiple vendor systems through a
-                      RESTful web API
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </li>
-
-            <!-- VMware -->
-            <li>
-              <div class="job-container">
-                <div class="job-image-container">
-                  <img src="images/vmware-logo.png" alt="VMware logo" />
-                </div>
-                <div class="job-text-container">
-                  <h2>VMware</h2>
-                  <h3>Software Engineer (Contract)</h3>
-                  <p>
-                    <svg
-                      class="icon-accent"
-                      width="16"
-                      height="16"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    >
-                      <rect
-                        x="3"
-                        y="4"
-                        width="18"
-                        height="18"
-                        rx="2"
-                        ry="2"
-                      ></rect>
-                      <line x1="16" y1="2" x2="16" y2="6"></line>
-                      <line x1="8" y1="2" x2="8" y2="6"></line>
-                      <line x1="3" y1="10" x2="21" y2="10"></line>
-                    </svg>
-                    October 2015 - May 2016
-                  </p>
-                  <p>
-                    <svg
-                      class="icon-accent"
-                      width="16"
-                      height="16"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    >
-                      <path
-                        d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"
-                      ></path>
-                      <circle cx="12" cy="10" r="3"></circle>
-                    </svg>
-                    Palo Alto, California
-                  </p>
-                  <ul class="job-description">
-                    <li>
-                      Developed new features, worked with stakeholders to
-                      improve a new release management web application built in
-                      Django and AngularJs
-                    </li>
-                    <li>
-                      Refactored the web app's frontend and implemented a
-                      Javascript framework using AngularJS
-                    </li>
-                    <li>
-                      Integrated app with Confluence and other internal web
-                      applications through a RESTful API
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </li>
-
-            <!-- AltaTec -->
-            <li>
-              <div class="job-container">
-                <div class="job-image-container">
-                  <img src="images/altatec-logo-full.png" alt="AltaTec logo" />
-                </div>
-                <div class="job-text-container">
-                  <h2>AltaTec</h2>
-                  <h3>Lead Software Engineer</h3>
-                  <p>
-                    <svg
-                      class="icon-accent"
-                      width="16"
-                      height="16"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    >
-                      <rect
-                        x="3"
-                        y="4"
-                        width="18"
-                        height="18"
-                        rx="2"
-                        ry="2"
-                      ></rect>
-                      <line x1="16" y1="2" x2="16" y2="6"></line>
-                      <line x1="8" y1="2" x2="8" y2="6"></line>
-                      <line x1="3" y1="10" x2="21" y2="10"></line>
-                    </svg>
-                    September 2014 - August 2015
-                  </p>
-                  <p>
-                    <svg
-                      class="icon-accent"
-                      width="16"
-                      height="16"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    >
-                      <path
-                        d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"
-                      ></path>
-                      <circle cx="12" cy="10" r="3"></circle>
-                    </svg>
-                    Guayaquil, Ecuador
-                  </p>
-                  <ul class="job-description">
-                    <li>
-                      Developed custom ERP software implementations using Python
-                      and the Odoo ERP platform
-                    </li>
-                    <li>
-                      Created an automatic backup process of PostgreSQL
-                      databases using Python and Amazon S3
-                    </li>
-                    <li>
-                      Supervised the deployment and maintenance of 12 cloud
-                      systems using Amazon Web Services
-                    </li>
-                    <li>
-                      Managed and trained a team of 4 software engineers to
-                      deliver fast client solutions
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </li>
-
-            <!-- ION Geophysical -->
-            <li>
-              <div class="job-container">
-                <div class="job-image-container">
-                  <img
-                    src="images/ion-logo.png"
-                    alt="ION Geophysical logo"
-                    class="ion-logo-light"
-                  />
-                  <img
-                    src="images/ion-logo-dark.png"
-                    alt="ION Geophysical logo"
-                    class="ion-logo-dark"
-                    style="display: none"
-                  />
-                </div>
-                <div class="job-text-container">
-                  <h2>ION Geophysical</h2>
-                  <h3>Software Engineer</h3>
-                  <p>
-                    <svg
-                      class="icon-accent"
-                      width="16"
-                      height="16"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    >
-                      <rect
-                        x="3"
-                        y="4"
-                        width="18"
-                        height="18"
-                        rx="2"
-                        ry="2"
-                      ></rect>
-                      <line x1="16" y1="2" x2="16" y2="6"></line>
-                      <line x1="8" y1="2" x2="8" y2="6"></line>
-                      <line x1="3" y1="10" x2="21" y2="10"></line>
-                    </svg>
-                    September 2012 - August 2014
-                  </p>
-                  <p>
-                    <svg
-                      class="icon-accent"
-                      width="16"
-                      height="16"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    >
-                      <path
-                        d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"
-                      ></path>
-                      <circle cx="12" cy="10" r="3"></circle>
-                    </svg>
-                    Houston, Texas
-                  </p>
-                  <ul class="job-description">
-                    <li>
-                      Developed code for a high-performance, parallel seismic
-                      data processing system in C++
-                    </li>
-                    <li>
-                      Designed and implemented various geophysical data
-                      processing modules
-                    </li>
-                    <li>
-                      Improved the memory and runtime efficiency of existing
-                      seismic processing algorithms
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </li>
-
-            <!-- DornerWorks -->
-            <li>
-              <div class="job-container">
-                <div class="job-image-container">
-                  <img
-                    src="images/dornerworks-logo.png"
-                    alt="DornerWorks logo"
-                    class="dornerworks-logo-light"
-                  />
-                  <img
-                    src="images/dornerworks-logo-dark.png"
-                    alt="DornerWorks logo"
-                    class="dornerworks-logo-dark"
-                    style="display: none"
-                  />
-                </div>
-                <div class="job-text-container">
-                  <h2>DornerWorks</h2>
-                  <h3>Embedded Systems Engineer Intern</h3>
-                  <p>
-                    <svg
-                      class="icon-accent"
-                      width="16"
-                      height="16"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    >
-                      <rect
-                        x="3"
-                        y="4"
-                        width="18"
-                        height="18"
-                        rx="2"
-                        ry="2"
-                      ></rect>
-                      <line x1="16" y1="2" x2="16" y2="6"></line>
-                      <line x1="8" y1="2" x2="8" y2="6"></line>
-                      <line x1="3" y1="10" x2="21" y2="10"></line>
-                    </svg>
-                    May 2010 - December 2011
-                  </p>
-                  <p>
-                    <svg
-                      class="icon-accent"
-                      width="16"
-                      height="16"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    >
-                      <path
-                        d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"
-                      ></path>
-                      <circle cx="12" cy="10" r="3"></circle>
-                    </svg>
-                    Grand Rapids, Michigan
-                  </p>
-                  <ul class="job-description">
-                    <li>
-                      Developed code for an open-source flight-certified
-                      operating system in C using vim
-                    </li>
-                    <li>
-                      Performed statistical analysis on the rate-of-change of
-                      open-source software
-                    </li>
-                    <li>
-                      Assisted in writing a proposal for a U.S. Navy Small
-                      Business Innovation Research grant that was awarded to
-                      DornerWorks
-                    </li>
-                    <li>
-                      Designed schematics & circuit board layouts for embedded
-                      systems using the PADS 9.3 suite
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </li>
-          </ul>
-        </section>
-      </main>
-
-      <footer class="footer">
-        <section id="contact" class="contact">
-          <h1>Say Hello</h1>
-          <a class="mono link-accent" href="mailto:dan@dhaggerty.com"
-            >dan@dhaggerty.com</a
-          >
-          <ul class="mono">
-            <li>
-              <a
-                target="_blank"
-                href="https://www.linkedin.com/in/haggertydan/"
-                rel="noreferrer"
-                >LinkedIn</a
-              >
-            </li>
+          <p>
+            Hello, world. I'm Dan. Software developer, home improvement
+            enthusiast, and new dad. I'm currently working at
+            <a href="https://www.nvidia.com/" target="_blank" rel="noreferrer"
+              >NVIDIA</a
+            >
+            on novel UIs for customizing LLMs and agents. Previously, I worked at
+            <a href="https://www.x.com/" target="_blank" rel="noreferrer"
+              >Twitter</a
+            >
+            on content moderation, at
+            <a href="https://www.google.com" target="_blank" rel="noreferrer"
+              >Google</a
+            >
+            on
+            <a
+              href="https://www.youtube.com/watch?v=FBWvXZP_frg"
+              target="_blank"
+              rel="noreferrer"
+              >Live Case</a
+            >, and at a consulting firm I co-owned in Guayaquil, Ecuador.
+          </p>
+          <p>
+            I work remotely from my home situated on
+            <a href="#" id="lake-link" target="_blank" rel="noreferrer"
+              >Lake St. Clair</a
+            >, just outside of Detroit.
+          </p>
+          <p>
+            I'm <strong>not looking for work</strong> right now, but you can
+            email me at
+            <a href="mailto:dan@dhaggerty.com">dan@dhaggerty.com</a> or check
+            out my <a href="resume.pdf" target="_blank">resume</a>.
+          </p>
+          <ul class="social-links">
             <li>
               <a
                 target="_blank"
                 href="https://www.github.com/haggs"
                 rel="noreferrer"
-                >GitHub</a
+                aria-label="GitHub"
               >
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path
+                    d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+                  ></path>
+                </svg>
+              </a>
             </li>
             <li>
               <a
                 target="_blank"
-                href="https://www.twitter.com/danhaggerty_"
+                href="https://www.linkedin.com/in/haggertydan/"
                 rel="noreferrer"
-                >Twitter</a
+                aria-label="LinkedIn"
               >
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path
+                    d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
+                  ></path>
+                  <rect x="2" y="9" width="4" height="12"></rect>
+                  <circle cx="4" cy="4" r="2"></circle>
+                </svg>
+              </a>
             </li>
             <li>
               <a
                 target="_blank"
                 href="https://www.instagram.com/danhaggerty/"
                 rel="noreferrer"
-                >Instagram</a
+                aria-label="Instagram"
               >
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                  <path
+                    d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"
+                  ></path>
+                  <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                </svg>
+              </a>
             </li>
           </ul>
         </section>
-
+      </main>
+      <footer class="footer">
         <section class="credits">
-          <p>
-            This site was built using plain HTML, CSS, and JavaScript. See the
-            source code on
-            <a
-              href="https://github.com/haggs/personal-website"
-              target="_blank"
-              rel="noreferrer"
-              >GitHub</a
-            >. <br />© <span id="current-year"></span> Dan Haggerty
-          </p>
+          <p>© <span id="current-year"></span> Dan Haggerty</p>
         </section>
       </footer>
-
-      <button
-        class="scroll-to-top-button icon-button"
-        id="scroll-to-top"
-        style="display: none"
-        aria-label="Scroll to top"
-      >
-        <svg
-          width="24"
-          height="24"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="currentColor"
-          stroke-width="2"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-        >
-          <line x1="12" y1="19" x2="12" y2="5"></line>
-          <polyline points="5 12 12 5 19 12"></polyline>
-        </svg>
-      </button>
     </div>
-
+    <button
+      class="dark-mode-toggle"
+      aria-label="Toggle dark mode"
+      id="dark-mode-toggle"
+    >
+      <svg
+        class="sun-icon"
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      >
+        <circle cx="12" cy="12" r="5"></circle>
+        <line x1="12" y1="1" x2="12" y2="3"></line>
+        <line x1="12" y1="21" x2="12" y2="23"></line>
+        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+        <line x1="1" y1="12" x2="3" y2="12"></line>
+        <line x1="21" y1="12" x2="23" y2="12"></line>
+        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+      </svg>
+      <svg
+        class="moon-icon"
+        style="display: none"
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      >
+        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+      </svg>
+    </button>
     <script type="module" src="main.js"></script>
   </body>
 </html>

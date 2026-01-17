@@ -1,5 +1,5 @@
 // Dark Mode functionality
-function initDarkMode() {
+function setInitialDarkMode() {
   const DARK_MODE_KEY = 'darkMode';
   const darkModeToggle = document.getElementById('dark-mode-toggle');
 
@@ -52,137 +52,38 @@ function initDarkMode() {
   });
 }
 
-// Mobile Navigation Menu
-function initMobileNav() {
-  const navMenuToggle = document.getElementById('nav-menu-toggle');
-  const navMenu = document.getElementById('nav-menu');
-  const navMenuLinks = document.querySelectorAll('.nav-menu-link');
-  const main = document.querySelector('.main');
-  const footer = document.querySelector('.footer');
-  const scrollToTop = document.getElementById('scroll-to-top');
-  const MOBILE_BREAKPOINT = 900;
+// Lake St. Clair link randomizer
+function randomizeLakeStClairLink() {
+  const lakeLinks = [
+    'https://www.instagram.com/p/DFonPaeOzy2',
+    'https://www.instagram.com/p/DDccirSPoVR',
+    'https://www.instagram.com/p/DB7jx03txeX',
+    'https://www.instagram.com/p/CsiqGofuAF6',
+    'https://www.instagram.com/p/Cri8oBwAQzP',
+    'https://www.instagram.com/p/CodAwRaJ4pW',
+    'https://www.instagram.com/p/CoP02s3uBz0',
+    'https://www.instagram.com/p/CjN76jmg2Um',
+    'https://www.instagram.com/p/CayQ6jYti9u',
+    'https://www.instagram.com/p/CadWIjEJMzr',
+    'https://www.instagram.com/p/CZcvOT2JMGY',
+    'https://www.instagram.com/p/CYeB8CXrEQ7',
+    'https://www.instagram.com/p/CQtNXDWn1jf',
+    'https://www.instagram.com/p/COEM2YsHTFD',
+    'https://www.instagram.com/p/CL7NT24nm_M',
+    'https://www.instagram.com/p/CK4UBnpnIeE',
+    'https://www.instagram.com/p/CJrHgmdHGWz',
+    'https://www.instagram.com/p/CKRfznRHDO9',
+  ];
 
-  if (!navMenuToggle || !navMenu || !main || !footer) {
-    console.error('Mobile nav elements not found');
-    return;
+  const lakeLink = document.getElementById('lake-link');
+  if (lakeLink && lakeLinks.length > 0) {
+    const randomLink = lakeLinks[Math.floor(Math.random() * lakeLinks.length)];
+    lakeLink.href = randomLink;
   }
-
-  let isMenuOpen = false;
-
-  function toggleMenu() {
-    isMenuOpen = !isMenuOpen;
-
-    if (isMenuOpen) {
-      navMenu.style.display = 'flex';
-      main.style.display = 'none';
-      footer.style.display = 'none';
-      if (scrollToTop) scrollToTop.style.display = 'none';
-      document.body.style.overflow = 'hidden';
-    } else {
-      navMenu.style.display = 'none';
-      main.style.display = 'block';
-      footer.style.display = 'grid';
-      document.body.style.overflow = '';
-    }
-  }
-
-  function closeMenu() {
-    if (isMenuOpen) {
-      toggleMenu();
-    }
-  }
-
-  navMenuToggle.addEventListener('click', toggleMenu);
-
-  // Close menu when clicking a link
-  navMenuLinks.forEach((link) => {
-    link.addEventListener('click', (e) => {
-      closeMenu();
-
-      // Handle anchor links
-      const href = link.getAttribute('href');
-      if (href && href.startsWith('#')) {
-        e.preventDefault();
-        setTimeout(() => {
-          const target = document.querySelector(href);
-          if (target) {
-            target.scrollIntoView({ behavior: 'smooth' });
-          }
-        }, 10);
-      }
-    });
-  });
-
-  // Close menu on window resize if it gets too wide
-  window.addEventListener('resize', () => {
-    if (window.innerWidth > MOBILE_BREAKPOINT) {
-      closeMenu();
-    }
-  });
-}
-
-// Scroll to Top Button
-function initScrollToTop() {
-  const scrollToTopButton = document.getElementById('scroll-to-top');
-  const SCROLL_THRESHOLD = 200;
-
-  if (!scrollToTopButton) {
-    console.error('Scroll to top button not found');
-    return;
-  }
-
-  function handleScroll() {
-    const scrollTop =
-      document.body.scrollTop || document.documentElement.scrollTop;
-
-    if (scrollTop > SCROLL_THRESHOLD) {
-      scrollToTopButton.style.display = 'flex';
-    } else {
-      scrollToTopButton.style.display = 'none';
-    }
-  }
-
-  function scrollToTop() {
-    window.scrollTo({
-      top: 0,
-      behavior: 'smooth',
-    });
-  }
-
-  window.addEventListener('scroll', handleScroll);
-  scrollToTopButton.addEventListener('click', scrollToTop);
-
-  // Initial check
-  handleScroll();
-}
-
-// Smooth Scroll for all anchor links
-function initSmoothScroll() {
-  const anchorLinks = document.querySelectorAll('a[href^="#"]');
-
-  anchorLinks.forEach((link) => {
-    link.addEventListener('click', (e) => {
-      const href = link.getAttribute('href');
-
-      // Don't handle empty hash or just '#'
-      if (!href || href === '#') return;
-
-      const target = document.querySelector(href);
-      if (target) {
-        e.preventDefault();
-        target.scrollIntoView({ behavior: 'smooth' });
-
-        // Update URL without scrolling
-        if (history.pushState) {
-          history.pushState(null, null, href);
-        }
-      }
-    });
-  });
 }
 
 // Set current year in footer
-function initFooterYear() {
+function setFooterYear() {
   const yearElement = document.getElementById('current-year');
   if (yearElement) {
     yearElement.textContent = new Date().getFullYear();
@@ -191,11 +92,9 @@ function initFooterYear() {
 
 // Initialize all modules
 function init() {
-  initDarkMode();
-  initMobileNav();
-  initScrollToTop();
-  initSmoothScroll();
-  initFooterYear();
+  setInitialDarkMode();
+  randomizeLakeStClairLink();
+  setFooterYear();
 }
 
 // Run initialization when DOM is ready
@@ -205,10 +104,4 @@ if (document.readyState === 'loading') {
   init();
 }
 
-export {
-  initDarkMode,
-  initMobileNav,
-  initScrollToTop,
-  initSmoothScroll,
-  initFooterYear,
-};
+export { setInitialDarkMode, randomizeLakeStClairLink, setFooterYear };
