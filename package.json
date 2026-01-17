@@ -6,8 +6,8 @@
   "scripts": {
     "dev": "http-server -p 8000 -o",
     "format": "prettier --write .",
-    "lint": "eslint --fix .",
     "format:check": "prettier --check .",
+    "lint": "eslint --fix .",
     "lint:check": "eslint ."
   },
   "devDependencies": {
